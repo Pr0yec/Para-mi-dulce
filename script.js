@@ -9,7 +9,7 @@ function mostrarSorpresa() {
 
     contenido.innerHTML = `
 
-        <h1>🌻 Para ti 💛</h1>
+        <h1> 🖤 Para ti 🛐 </h1>
 
         <p>
             Elige una sorpresa...
