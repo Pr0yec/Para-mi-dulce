@@ -1,0 +1,1157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   CUERPO DE LA PÁGINA
+======================================== */
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background-image: url("Fotos/Fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   CONTENEDOR PRINCIPAL
+======================================== */
+
+.pagina {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.contenedor {
+    width: min(900px, 90vw);
+    min-height: 600px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ========================================
+   CONTENIDO
+======================================== */
+
+.contenido {
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.contenido h1 {
+    font-size: 2.3rem;
+
+    margin-bottom: 20px;
+}
+
+
+.contenido p {
+    font-size: 1.3rem;
+
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   BOTONES NORMALES
+======================================== */
+
+.botones {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.botones button {
+    padding: 12px 30px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 1.1rem;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.botones button:hover {
+    transform: scale(1.08);
+}
+
+
+/* ========================================
+   MENÚ DE SORPRESAS
+======================================== */
+
+.sorpresas {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* ========================================
+   IMÁGENES DE LAS SORPRESAS
+======================================== */
+
+.boton-sorpresa {
+    height: 180px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    background: white;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s ease;
+}
+
+
+.boton-sorpresa img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.3s ease;
+}
+
+
+.boton-sorpresa:hover {
+    transform: translateY(-5px) scale(1.03);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+.boton-sorpresa:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ========================================
+   SORPRESA 1
+======================================== */
+
+.sorpresa1 {
+    width: 100%;
+}
+
+
+.sorpresa1 h1 {
+    margin-bottom: 10px;
+}
+
+
+/* MAPA DE MENSAJES */
+
+.mapa-amor {
+    position: relative;
+
+    width: 100%;
+    height: 390px;
+
+    margin: 10px auto 0;
+}
+
+
+/* ========================================
+   GIF CENTRAL
+======================================== */
+
+.gif-sorpresa1 {
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+}
+
+
+/* ========================================
+   MENSAJES
+======================================== */
+
+.mensaje {
+    position: absolute;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 240, 248, 0.9);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+    font-size: 0.95rem;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+
+.mensaje:hover {
+    transform: scale(1.08);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================================
+   POSICIONES DE LOS MENSAJES
+======================================== */
+
+.mensaje1 {
+    top: 5px;
+    left: 3%;
+}
+
+
+.mensaje2 {
+    top: 5px;
+    right: 5%;
+}
+
+
+.mensaje3 {
+    top: 90px;
+    left: 0;
+}
+
+
+.mensaje4 {
+    top: 145px;
+    left: 8%;
+}
+
+
+.mensaje5 {
+    top: 90px;
+    right: 0;
+}
+
+
+.mensaje6 {
+    top: 145px;
+    right: 5%;
+}
+
+
+.mensaje7 {
+    bottom: 90px;
+    left: 3%;
+}
+
+
+.mensaje8 {
+    bottom: 20px;
+    left: 10%;
+}
+
+
+.mensaje9 {
+    bottom: 20px;
+    right: 7%;
+}
+
+
+.mensaje10 {
+    bottom: 90px;
+    right: 2%;
+}
+
+
+/* ========================================
+   BOTÓN VOLVER
+======================================== */
+
+.boton-volver {
+    margin-top: 10px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    transition: 0.2s ease;
+}
+
+
+.boton-volver:hover {
+    transform: scale(1.05);
+}
+
+
+/* ========================================
+   CELULARES
+======================================== */
+
+@media (max-width: 600px) {
+
+    .contenedor {
+        width: 92vw;
+
+        min-height: 550px;
+
+        padding: 30px 20px;
+
+        border-radius: 25px;
+    }
+
+
+    .contenido h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .contenido p {
+        font-size: 1.1rem;
+    }
+
+
+    .botones {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .botones button {
+        width: 80%;
+    }
+
+
+    .sorpresas {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .boton-sorpresa {
+        height: 140px;
+    }
+
+
+    /* ====================================
+       SORPRESA 1 EN CELULAR
+    ==================================== */
+
+    .mapa-amor {
+        height: 400px;
+    }
+
+
+    .gif-sorpresa1 {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    .mensaje {
+        font-size: 0.75rem;
+
+        padding: 7px 10px;
+    }
+
+
+    .mensaje1 {
+        left: 0;
+    }
+
+
+    .mensaje2 {
+        right: 0;
+    }
+
+
+    .mensaje3 {
+        left: 0;
+        top: 85px;
+    }
+
+
+    .mensaje4 {
+        left: 0;
+        top: 145px;
+    }
+
+
+    .mensaje5 {
+        right: 0;
+        top: 85px;
+    }
+
+
+    .mensaje6 {
+        right: 0;
+        top: 145px;
+    }
+
+
+    .mensaje7 {
+        left: 0;
+        bottom: 100px;
+    }
+
+
+    .mensaje8 {
+        left: 0;
+        bottom: 25px;
+    }
+
+
+    .mensaje9 {
+        right: 0;
+        bottom: 25px;
+    }
+
+
+    .mensaje10 {
+        right: 0;
+        bottom: 100px;
+    }
+
+}
+
+    
+/* ========================================
+   SORPRESA 2 — PLAYLIST
+======================================== */
+
+.sorpresa2 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.texto-playlist {
+    margin-bottom: 20px !important;
+
+    font-size: 1.1rem !important;
+}
+
+
+/* CONTENEDOR DE SPOTIFY */
+
+.spotify {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+.spotify iframe {
+    display: block;
+
+    width: 100%;
+
+    border: none;
+}
+
+
+/* MENSAJE DEBAJO DE SPOTIFY */
+
+.mensaje-playlist {
+    margin-top: 20px;
+
+    margin-bottom: 15px !important;
+
+    font-size: 1rem !important;
+
+    font-style: italic;
+}
+
+/* ========================================
+   SORPRESA 3 — CARTA
+======================================== */
+
+.sorpresa3 {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    animation: aparecerCarta 0.8s ease;
+}
+
+
+.sorpresa3 h1 {
+    margin-bottom: 8px;
+
+    font-size: 2.2rem;
+}
+
+
+.subtitulo-carta {
+    font-size: 1rem !important;
+
+    margin-bottom: 25px !important;
+
+    color: #666;
+}
+
+
+/* ========================================
+   CONTENEDOR DE LAS CARTAS
+======================================== */
+
+.cartas {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* ========================================
+   CARTA
+======================================== */
+
+.carta {
+    position: relative;
+
+    width: 90%;
+
+    padding: 30px 40px;
+
+    border-radius: 22px;
+
+    text-align: left;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s ease;
+}
+
+
+.carta:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.17);
+}
+
+
+/* ========================================
+   PRIMERA CARTA
+======================================== */
+
+.carta1 {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 248, 230, 0.98),
+            rgba(255, 239, 205, 0.95)
+        );
+
+    border-left: 6px solid #f4c542;
+}
+
+
+/* ========================================
+   SEGUNDA CARTA
+======================================== */
+
+.carta2 {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 239, 248, 0.98),
+            rgba(255, 225, 240, 0.95)
+        );
+
+    border-right: 6px solid #e8a5c4;
+}
+
+
+/* ========================================
+   TÍTULOS
+======================================== */
+
+.carta h2 {
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    font-size: 1.45rem;
+}
+
+
+.carta p {
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   DECORACIONES
+======================================== */
+
+.decoracion {
+    text-align: center;
+
+    font-size: 1.7rem;
+
+    margin-bottom: 8px;
+}
+
+
+/* ========================================
+   SEPARADOR
+======================================== */
+
+.separador-carta {
+    margin: 12px 0;
+
+    font-size: 1.7rem;
+
+    animation: flotar 2s ease-in-out infinite;
+}
+
+
+/* ========================================
+   FRASE FINAL
+======================================== */
+
+.frase-final {
+    text-align: center;
+
+    font-size: 1.2rem !important;
+
+    font-weight: bold;
+
+    margin-top: 25px !important;
+}
+
+
+/* ========================================
+   FIRMA
+======================================== */
+
+.firma {
+    text-align: right;
+
+    margin-top: 20px;
+
+    font-style: italic;
+
+    line-height: 1.6 !important;
+}
+
+
+/* ========================================
+   ANIMACIONES
+======================================== */
+
+@keyframes aparecerCarta {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(20px)
+            scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+@keyframes flotar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+/* ========================================
+   CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+
+    .sorpresa3 h1 {
+        font-size: 1.7rem;
+    }
+
+
+    .subtitulo-carta {
+        font-size: 0.9rem !important;
+    }
+
+
+    .carta {
+        width: 100%;
+
+        padding: 22px 20px;
+
+        border-radius: 18px;
+    }
+
+
+    .carta h2 {
+        font-size: 1.2rem;
+    }
+
+
+    .carta p {
+        font-size: 0.9rem;
+
+        line-height: 1.6;
+    }
+
+
+    .decoracion {
+        font-size: 1.5rem;
+    }
+
+
+    .separador-carta {
+        margin: 8px 0;
+    }
+
+
+    .frase-final {
+        font-size: 1.05rem !important;
+    }
+
+}
+
+/* ========================================
+   SORPRESA 3
+======================================== */
+
+.sorpresa3 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.sorpresa3 h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+
+.subtitulo-carta {
+    font-size: 1rem !important;
+    margin-bottom: 25px !important;
+    color: #666;
+}
+
+
+/* DOS CARTAS JUNTAS */
+
+.cartas {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* CARTA */
+
+.carta {
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: left;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s ease;
+}
+
+
+.carta:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.17);
+}
+
+
+/* CARTA 1 */
+
+.carta1 {
+    background: rgba(255, 248, 230, 0.98);
+
+    border-left: 5px solid #f4c542;
+}
+
+
+/* CARTA 2 */
+
+.carta2 {
+    background: rgba(255, 239, 248, 0.98);
+
+    border-right: 5px solid #e8a5c4;
+}
+
+
+/* DECORACIÓN */
+
+.decoracion {
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 5px;
+}
+
+
+/* TÍTULOS */
+
+.carta h2 {
+    text-align: center;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 15px;
+}
+
+
+/* TEXTO */
+
+.carta p {
+    font-size: 0.92rem;
+
+    line-height: 1.55;
+
+    margin-bottom: 12px;
+}
+
+
+/* FRASE FINAL */
+
+.frase-final {
+    text-align: center;
+
+    font-size: 1.1rem !important;
+
+    font-weight: bold;
+
+    margin-top: 18px !important;
+}
+
+
+/* FIRMA */
+
+.firma {
+    text-align: right;
+    font-style: italic;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .sorpresa3 h1 {
+        font-size: 1.7rem;
+    }
+
+    .subtitulo-carta {
+        font-size: 0.9rem !important;
+    }
+
+    .cartas {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .carta {
+        padding: 20px;
+    }
+
+    .carta h2 {
+        font-size: 1.15rem;
+    }
+
+    .carta p {
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+
+}
+
+/* ========================================
+   SORPRESA 4 — RECUERDOS
+======================================== */
+
+.sorpresa4 {
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.sorpresa4 h1 {
+    font-size: 2.2rem;
+
+    margin-bottom: 5px;
+}
+
+
+.subtitulo-recuerdos {
+    font-size: 1rem !important;
+
+    margin-bottom: 25px !important;
+
+    color: #666;
+}
+
+
+/* ========================================
+   ÁLBUM
+======================================== */
+
+.album {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* ========================================
+   FOTO
+======================================== */
+
+.foto-recuerdo {
+    background: white;
+
+    padding: 12px;
+
+    padding-bottom: 20px;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s ease;
+}
+
+
+.foto-recuerdo:hover {
+    transform:
+        translateY(-7px)
+        rotate(-1deg);
+
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ========================================
+   IMAGEN
+======================================== */
+
+.foto {
+    width: 100%;
+
+    height: 150px;
+
+    overflow: hidden;
+
+    background: #eee;
+}
+
+
+.foto img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ========================================
+   TEXTO DE LA FOTO
+======================================== */
+
+.foto-recuerdo p {
+    margin-top: 12px;
+
+    margin-bottom: 0 !important;
+
+    font-family: "Comic Sans MS", cursive;
+
+    font-size: 0.9rem !important;
+
+    line-height: 1.4;
+
+    color: #555;
+}
+
+
+/* ========================================
+   MENSAJE FINAL
+======================================== */
+
+.mensaje-final {
+    margin-top: 20px !important;
+
+    margin-bottom: 10px !important;
+
+    font-size: 1.1rem !important;
+
+    font-weight: bold;
+
+    color: #555;
+}
+
+
+/* ========================================
+   CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+
+    .sorpresa4 h1 {
+        font-size: 1.7rem;
+    }
+
+
+    .subtitulo-recuerdos {
+        font-size: 0.9rem !important;
+    }
+
+
+    .album {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+
+    .foto-recuerdo {
+        padding: 8px;
+
+        padding-bottom: 12px;
+    }
+
+
+    .foto {
+        height: 100px;
+    }
+
+
+    .foto-recuerdo p {
+        font-size: 0.72rem !important;
+    }
+
+
+    .mensaje-final {
+        font-size: 0.9rem !important;
+    }
+
+}
